@@ -296,8 +296,9 @@ class zynq(linux):
         )
 
 class ocpoc_zynq(linux):
-    toolchain = 'arm-linux-gnueabihf'
+    toolchain = 'microblaze-xilinx-linux-gnu'
 
+	
     def configure_env(self, cfg, env):
         super(ocpoc_zynq, self).configure_env(cfg, env)
 
